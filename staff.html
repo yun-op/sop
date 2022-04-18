@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stat 134, Fall '17</title>
+
+
+        <!-- Bootstrap -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|PT+Serif|Lora|Source+Code+Pro" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <!-- Swiper -->
+        <link rel="stylesheet" href="css/swiper.min.css">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script type="text/javascript" async
+                src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+        </script>
+
+        <script src="https://use.fontawesome.com/63e7afe910.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    </head>
+    <body>
+        <!-- Title -->
+        <div class="navbar navbar-custom">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="col-sm-3 col-xs-3" id=nav-text-left>
+                        <div class=desktop>
+                            <ul class="nav navbar-nav">
+                                <li><h4><a href=index.html>Stat 134</a></h4></li>
+                            </ul>
+                        </div>
+                        <div class=mobile>
+                            <ul class="nav navbar-nav">
+                                <li><h4><a href=index.html>134</a></h4></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-9 col-xs-9" id=nav-text-right>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><p><a href=homework.html>Homework</a></p></li>
+                            <li><p><a href=readings.html>Readings</a></p></li>
+                            <li><p><a href=syllabus.html>Syllabus</a></p></li>
+                            <li><p><a href=staff.html>Staff</a></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <header class="container">
+            <h1 class = "header-xs">Concepts of Probability</h1>
+            <h5 class = "header-xs" id=subheading>Stat 134 with Hank Ibser, Fall '17.</h5>
+        </header>
+        <br>
+        <br>
+
+        <hr>
+        <br>        
+        <section class="container">
+            <p>All Office Hours are held at 201B Chavez.</p>
+                            <h3 class=header-xs>Instructor</h3>
+            <div class="col-sm-12" id=bio-block>
+                <div class="col-sm-12" id=gsi-pair-row>
+                    <div class="col-sm-4">
+                        <img src="assets/staff_photo/ibser.jpg" id=prof-photo>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class=bio-title>Hank Ibser</div>
+                        <div class=bio-email>hankibser AT berkeley DOT edu</div>
+                        <div class=bio-desc>As a math undergrad at Cal, I discovered probability through the class you are taking, then in grad school my interests gradually shifted from probability to statistics. I got my PhD in Statistics, also from Cal, in 2002, and I've been a lecturer here since then. In addition to teaching (which I love) I do consulting work in areas as varied as geothermal power and health care regulation. When I'm not doing anything statistical, I enjoy playing music (alto saxophone and bass), Dungeons and Dragons, and with my kids (age 7 and 9). I was captain of the Cal Men's Ultimate Frisbee team from 1996-1998 and coached the Cal Women's Ultimate Frisbee team from 2004-2007.</div>
+                        <row>
+                            <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                            <div class=col-sm-11><ul><li>M 1-3 pm</li>
+                                <li>W 10-12 pm</li></ul></div>
+                        </row>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" id=bio-block>
+                <div class=row>
+                    <h3 class=header-xs>Head uGSIs</h3>
+                    <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/andypalan.jpg" id=staff-photo>
+                            <div class=bio-title><a href=http://andypalan.com target=_blank>Andy Palan</a></div>
+                            <div class=bio-email>malayandi AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hey there, I'm a fourth-year studing Mathematics and Computer Science. I am broadly interested in artificial intelligence (AI) and teaching (surprise, surprise). My non-academic interests include European football, international cinema, and Indian music.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 1-2 pm @ 340 Evans (Section 102)</li>
+                                        <li>MW 4-5 pm @ 334 Evans (Section 107)</li></ul></div>
+                            </row>
+                            
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>M 10-11 am</li>
+                                        <li>Tu 2-4 pm</li>
+                                        <li>F 1-2 pm</li></ul></div>
+                            </row>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/dibya.jpg" id=staff-photo>
+                            <div class=bio-title><a href=http://dibya.xyz target="_blank">Dibya Ghosh</a></div>
+                            <div class=bio-email>dibya AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hey, I'm Dibya (pronounced "dibbo")! I'm a third-year studying Computer Science, Statistics, and Mathematics: my interests are in statistical learning and machine learning theory. Study aside, I love binge watching TV, I'm enamored with boba and Thai food, and I absolutely love teaching!
+                            </div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 2-3 pm @ 340 Evans (Section 112)</li>
+                                        <li>MW 4-5 pm @ 332 Evans (Section 108)</li></ul></div>
+                            </row>
+                            
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>M 11-12 pm</li>
+                                        <li>Tu 11-12 pm</li>
+                                        <li>W 1-2 pm</li>
+                                        <li>Th 11-12 pm</li></ul></div>
+                            </row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" id=bio-block>
+                <div class=row>
+                    <h3 class=header-xs>uGSIs</h3>
+                    <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/biyonka.png" id=staff-photo>
+                            <div class=bio-title><a href=http://biyonka.github.io target="_blank">Biyonka Liang</a></div>
+                            <div class=bio-email>biyonkaliang AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hi! I'm Biyonka, a third-year Statistics major w/ a Mathematics concentration. Academically, I'm interested in mathematical modeling and machine learning, especially their applications to public health and medicine. In my free time, I enjoy reading, playing piano and destroying my opponents in Overwatch.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 3-4 pm @ 332 Evans (Section 106)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>Tu 1-2 pm</li>
+                                        <li>F 2-3 pm</li></ul></div>
+                            </row>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/brian.jpeg" id=staff-photo>
+                            <div class=bio-title>Brian Thorsen</div>
+                            <div class=bio-email>brianthorsen AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hi everyone! I'm a third year Statistics major, originally from Los Angeles. Beyond statistics, my academic interests include ecology and sustainability, and the democratization of scientific research. In my spare time, I enjoy working on music and fantasizing about a job on a cooking show.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 3-4 pm @ 334 Evans (Section 105)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>Tu 11-1 pm</li></ul></div>
+                            </row>
+                        </div>
+                    </div>
+                     <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/dhrushil.jpg" id=staff-photo>
+                            <div class=bio-title>Dhrushil Badani</div>
+                            <div class=bio-email>badanidhrushil AT berkeley DOT edu</div>
+                            <div class=bio-desc>I'm Dhrushil, a senior-year Computer Science major from Mumbai. I enjoy reading about history &amp; politics, and spend a lion's share of my spare time indulging in South Asian film, music &amp; poetry. I hope to maximize your probability of enjoying probability this semester.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 6-7 pm @ 334 Evans (Section 111)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>M 4-5 pm</li>
+                                        <li>T 1-2 pm</li></ul></div>
+                            </row>
+                        </div>
+                       <div class="col-sm-6">
+                            <img src="assets/staff_photo/dhruvil.jpg" id=staff-photo>
+                            <div class=bio-title>Dhruvil Badani</div>
+                            <div class=bio-email>dhruvilb AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hey, I'm Dhruvil, a senior in Computer Science. Love trance music, crime film and a bunch of other things. Looking forward to a great semester with y'all!</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 5-6 pm @ 332 Evans (Section 110)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>W 1-3 pm</li></ul></div>
+                            </row>
+                        </div>
+                    </div>
+                    <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/jason.png" id=staff-photo>
+                            <div class=bio-title><a href=https://jasonyzhang.com/ target="_blank">Jason Zhang</a></div>
+                            <div class=bio-email>zhang.j AT berkeley DOT edu</div>
+                            <div class=bio-desc>3rd year/CS + Stat/Pleasanton, CA<br><a href=https://xkcd.com/552/
+     target="_blank">https://xkcd.com/552/</a></div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 1-2 pm @ 334 Evans (Section 101)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>Tu 2-4 pm</li></ul></div>
+                            </row>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/jessica.jpg" id=staff-photo>
+                            <div class=bio-title>Jessica Gao</div>
+                            <div class=bio-email>jessica_gao AT berkeley DOT edu</div>
+                            <div class=bio-desc>I'm Jessica, a senior studying Statistics and Business. I like running, watching movies and TV shows, and going karaoke with friends. I hope you will have fun with probability this semester :)</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 5-6 pm @ 334 Evans (Section 109)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>F 10-11 am, 2-3 pm</li></ul></div>
+                            </row>
+                        </div>
+                    </div>
+                    <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/kazu.jpg" id=staff-photo>
+                            <div class=bio-title>Kazu Kogachi</div>
+                            <div class=bio-email>kkogachi AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hi I am Kazu,<br>
+                            I like probability<br>
+                            I dislike the cold
+                            </div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 2-3 pm @ 332 Evans (Section 104)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>M 11-12 pm, 3-4 pm</li></ul></div>
+                            </row>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/max.jpg" id=staff-photo>
+                            <div class=bio-title>Maxwell Weinstein</div>
+                            <div class=bio-email>maxwelljweinstein AT berkeley DOT edu</div>
+                            <div class=bio-desc>I am a Junior from the Bay Area, studying Math and Statistics. My academic interests are in Bayesian Statistics, Machine Learning, and Sports Analytics. In my free time, I like to make music with friends or write parody yelp reviews.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>MW 2-3 pm @ 334 Evans (Section 103)</li>
+                                        </ul></div>
+                            </row>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>OH</b>:</div>
+                                    <div class=col-sm-11 id=bio-entry><ul><li>W 3-5 pm</li></ul></div>
+                            </row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" id=bio-block>
+                <div class=row>
+                    <h3 class=header-xs>Tutors</h3>
+                    <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/catherine.jpg" id=staff-photo>
+                            <div class=bio-title>Catherine Wang</div>
+                            <div class=bio-email>catherine_wang AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hello! I'm Catherine, and I'm a second year studying Statistics and Computer Science. I'm from Santa Barbara, California, and in my free time, I enjoy playing piano, binge watching Netflix, and playing video games.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>M 2-3 pm @ 332 Evans (Section 112, with Dibya)</li>
+                                        <li>W 2-3 pm @ 332 Evans (Setion 104, with Kazu)</li>
+                                        </ul></div>
+                            </row>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/srinath.jpg" id=staff-photo>
+                            <div class=bio-title>Srinath Goli</div>
+                            <div class=bio-email>srig AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hi! I’m Srinath, a second year EECS major from the Bay Area. I enjoy playing poker, chess, board games, and eating at new restaurants. My favorite games are Catan, Coup, Carcassonne, and Dominion - let me know if you have any recommendations!</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>M 1-2 pm @ 340 Evans (Section 102, with Andy)</li>
+                                        <li>M 4-5 pm @ 334 Evans (Section 107, with Andy)</li>
+                                        </ul></div>
+                            </row>
+                        </div>
+                    </div>
+                        <div class=row id=gsi-pair-row>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/xinyi.jpeg" id=staff-photo>
+                            <div class=bio-title>Xinyi Ren</div>
+                            <div class=bio-email>xinyiren AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hey! I am Xinyi, a Sophomore in Computer Science. I'm interested in machine learning especially deep learning and its use in computer vision and health industry. In my free time, I love talking, talking and talking so come and talk to me whenever you want.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>M 3-4 pm @ 332 Evans (Section 106, with Biyonka)</li>
+                                        <li>M 5-6 pm @ 334 Evans (Setion 109, with Jessica)</li>
+                                        </ul></div>
+                            </row>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/staff_photo/ziyang.jpg" id=staff-photo>
+                            <div class=bio-title>Ziyang Zhou</div>
+                            <div class=bio-email>zhou_ziyang AT berkeley DOT edu</div>
+                            <div class=bio-desc>Hi. I’m Ziyang. I’m a senior studying Mathematics, Economics, and Statistics. My interests lie in the realm of application of statistical methods to healthcare. In my spare time, I enjoy reading biography, and playing basketball.</div>
+                            <row>
+                                    <div class=col-sm-1 id=bio-label><b>Section</b>:</div>
+                                    <div class=col-sm-11><ul id=bio-entry><li>M 5-6 pm @ 332 Evans (Section 110, with Dhruvil)</li>
+                                        <li>M 6-7 pm @ 334 Evans (Setion 111, with Dhrushil)</li>
+                                        </ul></div>
+                            </row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <footer section="container">
+            <row class="col-sm-12">
+                <ul class="col-sm-12">
+                    <li>Site originally designed and developed by <a href="https://www.stat.berkeley.edu/~ani/.com" target="_blank">Ani Adhikari</a> and <a href="http://andypalan.com" target="_blank">Andy Palan</a>. </li>
+                    <br>
+                </ul>
+            </row>
+        </footer>
+        
+    </body>
+</html>
